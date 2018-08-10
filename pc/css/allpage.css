@@ -133,10 +133,11 @@ body {
 #head h2 {
 	/* [disabled]color: #000; */
 	padding-top: 5px;
-	width: 100%;
+	/* width: 100%; */
 	float: left;
 	position: absolute;
 	font-size: 100%;
+  padding-right: 260px;
 }
 
 #head #head_contact {
