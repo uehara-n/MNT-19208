@@ -1,0 +1,1465 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/*---------------------------------------------------reset
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+	font-weight:normal;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+html {
+    overflow: auto;
+}
+
+body {
+    line-height: 1;
+/*   overflow: hidden;*/
+	color: #4b4b4b;
+}
+
+a {
+	color: #D7000F;
+}
+
+a:hover{
+	color: #CC8A3B;
+}
+
+/*ol,*/ ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:hover img.img_over {
+		border:none !important;
+		opacity: 0.6 !important;
+		filter: Alpha(Opacity=60) !important;
+}
+
+.border1 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cacaca;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	margin-bottom: 50px;
+}
+
+
+/*body*/
+body {
+	font-size: 12px;
+	font-family:"ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+}
+
+
+.c_left {
+	clear: left;
+	/* [disabled]margin-left: 0px !important; */
+	/* [disabled]padding-left: 0px !important; */
+}
+
+/*head*/
+
+#head {
+	height: 125px;
+	position: relative;
+	top: 0px;
+	width: 960px;
+	z-index: 20;
+	margin-right: auto;
+	margin-left: auto;
+	/* [disabled]margin-bottom: 100px; */
+}
+
+#head h1 {
+	position: absolute;
+	bottom: 5px;
+}
+
+#head h2 {
+	/* [disabled]color: #000; */
+	padding-top: 5px;
+	width: 100%;
+	float: left;
+	position: absolute;
+	font-size: 100%;
+}
+
+#head #head_contact {
+	position: relative;
+	top: 0px;
+	right: 0px;
+	background-image: url(../images/head/h_contact_bg.png);
+	background-repeat: no-repeat;
+	height: 125px;
+	width: 500px;
+	background-position: right;
+	float: right;
+}
+
+
+#head_contact .btn {
+	display: block;
+	height: 59px;
+	width: 155px;
+	position: absolute;
+	bottom: 10px;
+}
+
+/*gnav*/
+
+#gnav {
+	height: 63px;
+	width: 100%;
+	z-index: 20;
+	background-color: #fff;
+	background-image: url(../images/head/gnav/gnav_bg.gif);
+	background-repeat: repeat-x;
+}
+
+#gnav .globalnavi {
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#gnav .globalnavi li{
+	float: left;
+	line-height: 0px;
+}
+#gnav .globalnavi ul{
+	display:none;
+	padding:0;
+	background:#fff;
+	list-style-type:none;
+	position:absolute;
+	z-index:1002;
+	border-bottom:1px solid #CC8A3B;
+	margin: -0;
+	width: 188px;
+}
+#gnav .globalnavi ul li:first-child{
+	border-top:2px solid #CC8A3B;
+}
+#gnav .globalnavi ul li{
+	float:none;
+	border-right:2px solid #CC8A3B;
+	border-bottom:1px solid #CC8A3B;
+	border-left:2px solid #CC8A3B;
+	margin:0;
+	padding:0;
+}
+#gnav .globalnavi ul li a{
+	text-align: left;
+	display:block;
+	min-width:151px;
+	font-size: 14px;
+	white-space:nowrap;
+	padding:10px 5px 10px 15px;
+	line-height: 1.5em;
+	color:#333;
+	text-decoration:none;
+	background-image: url(../images/head/gnav/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 7px 18px;
+}
+#gnav .globalnavi ul a:hover{
+	background-color:#f1e8dc;
+}
+
+#gnav .globalnavi .contact {
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+
+
+#main {
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	margin-top: 50px;
+	padding-right: 10px;
+	padding-left: 10px;
+	/* [disabled]padding-bottom: 50px; */
+}
+
+/*contents*/
+#contents {
+	/* [disabled]margin-right:50px; */
+	float: right;
+	width: 710px;
+}
+
+.c_center {
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	margin-top: 50px;
+	padding-right: 10px;
+	padding-left: 10px;
+	/* [disabled]padding-bottom: 50px; */
+}
+
+/**/
+
+#foot {
+	padding-top: 10px;
+	background-color: #013c5c;
+	color: #FFF;
+	padding-bottom: 10px;
+	/* [disabled]position: relative; */
+}
+#foot .inner {
+	width: 940px;
+	position: relative;
+	height: 10px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+#foot .inner .com_info {
+	float: left;
+	width: 260px;
+}
+
+#foot .inner .com_info .logo {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cfcfcf;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+
+#foot .inner .com_info .com_txt {
+	line-height: 1.5em;
+}
+
+#foot .inner .com_info .com_txt dt {
+	margin-left: -6px;
+}
+
+#foot .inner .com_info .com_txt dd {
+	margin-bottom: 5px;
+}
+
+#foot .inner #foot_menu {
+	float: right;
+	width: 670px;
+}
+
+#foot .inner #foot_menu li {
+	float: left;
+	width: 165px;
+	font-size: 14px;
+	line-height:1.5em;
+}
+#foot .inner #foot_menu li a {
+	color: #323232;
+	text-decoration: none;
+}
+#foot .inner #foot_menu li ul li {
+	font-size: 12px;
+	padding-left: 15px;
+	background-image: url(../images/foot/foot_arrow.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/*side*/
+#side {
+	float: left;
+	width: 210px;
+}
+
+#side .sbnr_area {
+	width: 210px;
+	text-align: center;
+}
+#side .sbnr_area a .s_planbnr {
+	margin-top: -20px;
+}
+#side .sbnr_area img {
+	margin-bottom: 10px;
+}
+
+#side .sbnr_area a {
+	display:block;
+}
+#side .s_menu {
+	margin-bottom: 10px;
+	background-color: #faf9f5;
+}
+
+#side .s_menu .tit {
+	line-height: 0px;
+}
+
+#side .s_menu ul li a {
+	display: block;
+	padding: 15px 0 15px 30px;
+	color: #323232;
+	background-image: url(../images/side/s_arrow.png);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	font-size: 14px;
+	text-decoration: none;
+	background-color: #f3eee1;
+	border-bottom: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+}
+#side .s_menu ul li a:hover {
+	background-color: #EFD6A1;
+}
+
+#side .s_box {
+	margin-bottom: 10px;
+	background-color: #fcfaf6;
+	padding-bottom: 10px;
+	border: 1px solid #eaeaea;
+}
+
+#side .s_box .tit {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/**/
+#side #leaf .pic {
+	width: 180px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#side #leaf .date {
+	text-align: right;
+	width: 180px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/**/
+#side #area .map {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#side #area .shosai {
+	width: 169px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	line-height: 1.5em;
+}
+
+#side #area .shosai .stit {
+	color: #FFF;
+	background-color: #c0c0c0;
+	display: block;
+	width: 30px;
+	margin-bottom: 0px;
+	text-align: center;
+	line-height: 1px;
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+}
+
+#side #area .cap {
+	color: #c20000;
+	width: 169px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 1.5em;
+}
+/**/
+#side #s_mansion {
+	background-color: #f2edd7;
+	text-align: center;
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+}
+#side #s_mansion .tit {
+	padding-top: 8px;
+}
+#side #s_mansion p {
+	margin-bottom: 5px;
+}
+
+
+/* */
+.scontact {
+	clear: both;
+	height: 166px;
+	margin-bottom: 30px;
+}
+/* */
+.b_contact {
+	height: 166px;
+	width: 710px;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+
+/*  */
+.bnr_area1 {
+	margin-bottom: 20px;
+}
+
+/*  */
+#kaiyu {
+	padding: 0 0 10px;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	-webkit-justify-content: space-between; /* Safari */
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap; /* Safari */
+	flex-wrap: wrap;
+}
+
+#kaiyu .box {
+	border: 1px solid #013C5C;
+	width: 223px;
+	float: left;
+	text-align: center;
+	margin-left: 15px;
+}
+
+#kaiyu .box .tit {
+	margin-bottom: 5px;
+}
+
+#kaiyu .box.c_left {
+	margin-left: 0px;
+}
+#kaiyu .box .btn {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	width: 195px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* =========================== */
+
+#foot .copy {
+	text-align: center;
+}
+
+#main .go_top {
+	position: relative;
+	clear: both;
+	height: 70px;
+	bottom: -20px;
+}
+
+.go_top a img {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+
+
+/**/
+
+.customer_navi,.customer_navi_c{
+	border:1px solid #CCC;
+	padding:10px;
+	background-color:#eee;
+	clear:left;
+	overflow:hidden;
+}
+.customer_navi p{
+	margin:0;
+}
+.customer_navi{
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.customer_navi_c{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.customer_navi_left{
+	dislpay:inline-block;
+	float:left;
+	margin:0;
+	padding:0;
+}
+.customer_navi .pages{
+	display:inlline-block;
+	padding:5px;
+	margin:0;
+}
+.customer_navi .current{
+	display:inlline-block;
+	padding:3px 5px;
+	margin:0 2px;
+	border:1px solid #333;
+	background-color:#fff;
+}
+
+.page_back_btn01,.page_back_btn02,.page_back_btn01 p,.page_back_btn02 p{
+	display:inline;
+}
+.page_back_btn02 a,.page_back_btn01 a{
+	display:inline-block;
+	border:1px solid #CCC;
+	padding:5px;
+	color: #F60;
+}
+.page_back_btn02 a:hover,.page_back_btn01 a:hover{
+	background-color:#333;
+	color:#fff;
+}
+
+
+
+
+/**/
+
+#main_tit {
+	font-size: 26px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #545454;
+	text-align: left;
+	padding-bottom: 5px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.main_tit {
+	font-size: 26px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #545454;
+	text-align: left;
+	padding-bottom: 5px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/**/
+#pankuzu{
+	list-style-type:none;
+	margin:0 20px 20px 0;
+	padding:0;
+}
+#pankuzu li{
+	display:inline;
+}
+#pankuzu a{
+	color:#F60;
+}
+#pankuzu a:hover{
+	color:#F90;
+	text-decoration:none;
+}
+
+/*first */
+#first_page {
+	font-size: 14px;
+	line-height: 1.6em;
+	width:672px;
+}
+#first_page #top_box {
+	height: 160px;
+}
+
+#first_page #top_box .pic {
+	float: left;
+	width: 170px;
+}
+
+#first_page .block1 img {
+	margin-top:10px;
+}
+
+#first_page .block2 {
+	width: 672px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+}
+
+#first_page .block2 h3 {
+	margin: 0px;
+	padding:0px;
+	height:108px;
+}
+
+#first_page .block2 .inner {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/first/b2_bg.gif);
+	background-repeat: repeat-y;
+	width: 682px;
+	padding-bottom: 10px;
+	vertical-align:top;
+}
+
+#first_page .block2 .inner .box {
+	width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#first_page .block2 .inner .box h4 {
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+#first_page .block2 .b_bottom {
+	margin-top: -15px;
+}
+
+#first_page .block3 {
+}
+
+#first_page .block3 .box1 {
+	padding-bottom: 20px;
+}
+
+#first_page .block3 .box1 .txt {
+	float: left;
+	width: 457px;
+}
+
+#first_page .block3 .box1 .img {
+	float: right;
+	width: 200px;
+}
+
+#first_page .block3 .txt h4 {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#first_page .block3 .box1 .txt .more {
+	text-align: right;
+	margin-bottom: 10px;
+	margin-top: -15px;
+	padding-top: 0px;
+}
+
+#first_page .block3 .box1 .txt .more a:hover{
+	border:none !important;
+	opacity: 0.6 !important;
+	filter: Alpha(Opacity=60) !important;
+}
+
+
+#first_page .block3 .box2 .img {
+	float: left;
+	margin-top:110px;
+}
+
+#first_page .block3 .box2 .txt {
+	float: right;
+	width: 260px;
+}
+
+#first_page .block3 .box3 {
+	margin-bottom: 15px;
+}
+
+#first_page .block3 .box3 .img {
+	float: right;
+	width: 256px;
+	margin-top:50px;
+}
+
+
+#first_page .block3 .box4 {
+}
+
+#first_page .block3 .box4 .img {
+	float: left;
+	width: 270px;
+}
+
+#first_page .block3 .box4 {
+	padding-bottom: 20px;
+}
+
+#first_page .block3 .box4 .txt {
+	float: right;
+	width: 380px;
+}
+
+#first_page .block3 .box4 .img {
+	float: left;
+	width: 270px;
+}
+
+#first_page .block1 p {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+#first_page .block3 .box2 {
+	padding-bottom: 20px;
+}
+
+/*point  */
+
+#keiyaku_page {
+	padding-bottom: 25px;
+	width:672px;
+}
+
+#keiyaku_page *{
+	font-size:14px;
+	line-height: 1.6em;
+}
+
+#keiyaku_page #top_box {
+	height: 200px;
+}
+
+#keiyaku_page #top_box .pic {
+	float: left;
+	width: 170px;
+}
+
+#keiyaku_page p {
+	margin-bottom: 10px;
+	padding-right:10px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+#keiyaku_page .block {
+padding-bottom: 15px;
+}
+
+#keiyaku_page #bottom_box {
+	text-align: center;
+}
+
+/**/
+#flow_page {
+	padding: 0px;
+	width: 710px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#flow_page .left_pic {
+	float: left;
+	margin-right: 15px;
+}
+#flow_page .flow_top_txt {
+	font-size: 16px;
+	line-height: 135%;
+}
+#flow_page .mb20 {
+	margin-bottom: 20px;
+}
+#flow_page h3 {
+	padding: 0px;
+	margin-top: 30px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+#flow_page .flow_txt {
+	padding: 10px;
+}
+#flow_page .flow_txt p,#flow_page #flow4_box1 p,#flow_page #flow4_box2 p {
+	padding: 0px;
+	font-size: 14px;
+	line-height: 155%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+#flow_page .flow_txt ul,#flow_page .flow_txt li {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#flow_page .flow_txt .flow_btn li {
+	float: left;
+	margin-right: 15px;
+}
+#flow_page .flow_txt .flow_btn {
+	float: right;
+}
+
+#flow_page #flow4_box1 {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/flow/flow4_sub1.jpg);
+	background-repeat: no-repeat;
+	height: 152px;
+	width: 646px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#flow_page #flow4_box1 p {
+	padding-right: 25px;
+	padding-left: 19px;
+	padding-top: 60px;
+}
+#flow_page #flow4_box2 {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/flow/flow4_sub2.jpg);
+	background-repeat: no-repeat;
+	height: 192px;
+	width: 638px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#flow_page #flow4_box2 p {
+	padding-top: 68px;
+	padding-left: 20px;
+}
+#flow_page .flow_txt .style01 {
+	color: #FF0000;
+	font-size: 18px;
+	font-weight: bold;
+}
+#flow_page .flow_txt .flow_btn a:hover img {
+opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+/*  */
+#tatemono_shindan {
+	padding: 0px;
+	width: 730px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#tatemono_shindan p {
+	font-size: 14px;
+	line-height: 1.8em;
+	margin: 0px;
+	padding: 10px;
+}
+#tatemono_shindan .mb20 {
+	margin-bottom: 20px;
+}
+#tatemono_shindan .mb10 {
+	margin-bottom: 10px;
+}
+#tatemono_shindan .f_right {
+	float: right;
+	margin-left: 20px;
+}
+#tatemono_shindan .shindan_box {
+	border: 2px solid #007F54;
+	padding: 13px;
+	width: 700px;
+	margin-bottom: 30px;
+}
+#tatemono_shindan .shindan7_box {
+	padding: 13px;
+	width: 700px;
+	height:704px;
+	position:relative;
+	margin-bottom: 30px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #FFCC00;
+	border-bottom-color: #FFCC00;
+	border-left-color: #FFCC00;
+}
+	#tatemono_shindan .move_box{
+	width: 460px;
+	height: 233px;
+	position: absolute;
+	top: 484px;
+	left: 255px;
+	}
+	#tatemono_shindan .move_box span{
+		margin-right:20px;
+	}
+#tatemono_shindan .move_box img{
+		margin-top:8px;
+	}
+#tatemono_shindan .shindan_box .left {
+	float: left;
+	margin-right: 15px;
+}
+#tatemono_shindan .shindan_box .text-tit2 {
+	width: 407px;
+	font-weight: bold;
+	float: right;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #666;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+/**/
+#nurikae {
+	padding-bottom: 30px;
+}
+
+#nurikae .hnsk-inBox {
+	padding-left: 10px;
+}
+
+#nurikae .content_roundbox-hnsk-nosp {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #FFF;
+	float: left;
+	width: 728px;
+	border: 1px solid #DCD8BF;
+	height: auto;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 30px;
+	margin-left: 0px;
+	padding: 0;
+	clear: left;
+}
+#nurikae .content_roundbox-hnsk-nosp h4 {
+	background-color: #F0EBD8;
+	height: 30px;
+	width: 678px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-size: 20px;
+	color: #423602;
+	float: left;
+	clear: left;
+	}
+
+#nurikae .content_roundbox-hnsk-nosp .customer_navi{
+	margin:0 0 10px 0;
+}
+
+#nurikae img.purpose-r {
+	border:none;
+	float:right;
+	padding:0;
+	margin:0 0 20px 20px;
+}
+
+#nurikae img.purpose-l {
+	border:none;
+	float:left;
+	padding:0;
+	margin:0 20px 20px 0;
+}
+
+#nurikae p.purpose-sp {
+	line-height:1.8em;
+	padding:0;
+	margin:0 0 15px 0;
+}
+
+#nurikae p.purpose-nosp {
+	line-height:1.8em;
+	padding:0;
+	margin:0;
+}
+
+#nurikae .purpose-fb140 {
+	line-height:1.8em;
+	padding:0;
+	margin:0;
+	font-weight:bold;
+	font-size:140%;
+}
+
+#nurikae .purpose-fb {
+	line-height:1.8em;
+	padding:0;
+	margin:0;
+	font-weight:bold;
+}
+
+#nurikae #purpose-tit {
+	background:url(../page_image/nurikae/purpose-tit01.jpg) no-repeat;
+	width:508px;
+	height:78px;
+	padding:142px 25px 0 247px;
+	margin:0 0 20px 0;
+}
+
+#nurikae #purpose-tit h3 {
+	text-indent:-9999px;
+	float:right;
+}
+
+#purpose-tit p {
+	line-height:1.6em;
+	font-size:140%;
+	margin:0;
+	padding:0;
+}
+
+#nurikae h4.purpose-tit02 {
+	background:url(../page_image/nurikae/purpose-tit02.jpg) no-repeat;
+	text-indent:-9999px;
+	width:730px;
+	height:47px;
+	margin:0 0 20px 0;
+	padding:0;
+}
+
+#nurikae h5.purpose-tit03 {
+	background:url(../page_image/nurikae/purpose-tit03.jpg) no-repeat;
+	text-indent:-9999px;
+	width:728px;
+	height:63px;
+	margin:0 0 20px 0;
+	padding:0;
+}
+
+#nurikae h5.purpose-tit11 {
+	background:url(../page_image/nurikae/purpose-tit11.jpg) no-repeat;
+	text-indent:-9999px;
+	width:730px;
+	height:63px;
+	margin:0;
+	padding:0;
+}
+
+/**/
+#nurikaecheck {
+	margin-bottom: 30px;
+	width: 740px;
+}
+
+#nurikaecheck h4 {
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: -8px;
+	margin-left: 0px;
+}
+
+
+#nurikaecheck .borderbox1 {
+	border: 1px solid #323232;
+	padding: 18px;
+}
+
+#nurikaecheck .borderbox1 h5 {
+	margin-bottom: 15px;
+}
+
+#nurikaecheck .borderbox1 .pic {
+	float: right;
+	width: 237px;
+}
+
+#nurikaecheck .borderbox1 .txt {
+	line-height: 1.6em;
+}
+
+/* */
+
+#toso_hikaku {
+	margin: 0px;
+	padding: 0px;
+	width: 672px;
+}
+#toso_hikaku .hikaku_t {
+	padding: 5px;
+	line-height: 1.4em;
+	font-size: 15px;
+}
+
+#toso_hikaku .p_right {
+	float: right;
+	margin-left: 15px;
+}
+#toso_hikaku .toryo1 {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/t-hikaku/hikaku6.jpg);
+	background-repeat: no-repeat;
+	height: 206px;
+	width: 672px;
+	margin-bottom: 20px;
+}
+#toso_hikaku .toryo2 {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/t-hikaku/hikaku7.jpg);
+	background-repeat: no-repeat;
+	height: 206px;
+	width: 672px;
+	margin-bottom: 20px;
+}
+#toso_hikaku .toryo3 {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/t-hikaku/hikaku8.jpg);
+	background-repeat: no-repeat;
+	height: 206px;
+	width: 672px;
+	margin-bottom: 20px;
+}
+#toso_hikaku .toryo4 {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/t-hikaku/hikaku9.jpg);
+	background-repeat: no-repeat;
+	height: 206px;
+	width: 672px;
+	margin-bottom: 20px;
+}
+#toso_hikaku .toryo5 {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/t-hikaku/hikaku10.jpg);
+	background-repeat: no-repeat;
+	height: 206px;
+	width: 672px;
+	margin-bottom: 20px;
+}
+#toso_hikaku .toryo6 {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/t-hikaku/hikaku11.jpg);
+	background-repeat: no-repeat;
+	height: 206px;
+	width: 672px;
+	margin-bottom: 20px;
+}
+#toso_hikaku .toryo7 {
+	background-image: url(https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/t-hikaku/hikaku12.jpg);
+	background-repeat: no-repeat;
+	height: 206px;
+	width: 672px;
+	margin-bottom: 20px;
+}
+#toso_hikaku .toryo1 p,
+#toso_hikaku .toryo2 p,
+#toso_hikaku .toryo3 p,
+#toso_hikaku .toryo4 p,
+#toso_hikaku .toryo5 p,
+#toso_hikaku .toryo6 p,
+#toso_hikaku .toryo7 p
+{
+	padding-left: 280px;
+	padding-top: 30px;
+	line-height: 1.5em;
+	font-size: 15px;
+	padding-right: 10px;
+}
+
+/* */
+.yoGainaMain {
+	margin: 30px auto 0 0;
+}
+
+.yoGainaTitle {
+	margin: 50px auto 0;
+	text-align: center;
+}
+
+.yoGainaTitle02 {
+	margin: 50px auto 40px;
+	text-align: center;
+}
+
+.yoGainaTitle03 {
+	width: 672px;
+	margin: 40px auto 20px;
+	text-align: center;
+}
+
+.yoGainaBox01 {
+	position: relative;
+	width: 672px;
+	margin: 40px auto 0;
+}
+
+.yoGainaBox01 div {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.yoGainaBox01 p {
+	width: 420px;
+	margin: 0 auto 20px 310px;
+}
+
+.yoGainaBox01 h4 {
+	width: 420px;
+	margin: 0 auto 5px 310px;
+}
+
+.yoGainaBox02 {
+	width: 672px;
+	margin: 40px auto 0;
+}
+
+.yoGainaBox02 p {
+	width: 710px;
+	margin: 0 auto 20px 20px;
+}
+
+.yoGainaBox03 {
+	width: 710px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+
+.yoGainaBox03Left {
+	float: left;
+	width: 327px;
+}
+
+.yoGainaBox03Right {
+	float: left;
+	width: 327px;
+	height: 250px;
+}
+
+.yoGainaBox03Left h4,
+.yoGainaBox03Right h4 {
+	width: 327px;
+	margin: 0;
+}
+
+.yoGainaBox03Left p,
+.yoGainaBox03Right p {
+	width: 291px;
+	margin: 0;
+	border-right: solid 5px #E0E0E0;
+	border-bottom: solid 5px #E0E0E0;
+	border-left: solid 5px #E0E0E0;
+	height: 180px;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.yoGainaBox04 {
+	height: 650px;
+	background-image: url("https://www.gaiso-sendaiizumi.com/wp-content/themes/gaiheki/page_image/gaina/image03.jpg");
+	background-position:20px 330px;
+	background-repeat: no-repeat;
+	padding:20px;
+}
+
+.yoGainaBox04 p {
+	width: 652px;
+	margin-left: 20px!important;
+	margin-bottom: 20px!important;
+}
+
+.yoGainaBox05 {
+	background-position: 370px 90px;
+	background-repeat: no-repeat;
+	width: 672px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.yoGainaBox05 p {
+	width: 710px;
+	margin: 0 auto 20px 20px;
+}
+
+#gaina{
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+#gaina h2 {
+	width: 667px;
+	background-color: #60A60F;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+	padding: 5px;
+	margin-top: 0px;
+}
+
+.gainatit02 {
+	background:url(http://www.danki-gaiso.com/wp-content/themes/gaiheki/page_image/gaina/ver2/title02.jpg) no-repeat;
+	width:672px;
+	height:300px;
+	padding:100px 0 0 0;
+}
+
+.gainatit02 {
+	background:url(http://www.danki-gaiso.com/wp-content/themes/gaiheki/page_image/gaina/ver2/title02.jpg) no-repeat;
+	width:672px;
+	height:300px;
+	padding:100px 0 0 0;
+}
+
+.gainaimg1 {
+	float: right;
+	height: 320px;
+	width: 299px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.gaina_h5 {
+	width: 672px;
+}
+
+#gaina .sekopic .box {
+	float: left;
+	width: 220px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#gaina .sekopic {
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+#gaina .gaina_box {
+	background-color:#FF9;
+	padding:5px 0 5px 5px;
+	border:1px solid #ddd;
+}
+
+#gaina .gaina_box .box {
+	float: left;
+	width: 310px;
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+#gaina .gaina_box .box p {
+	text-align: left;
+	width: 294px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+}
+
+.mt-m20 {
+	margin-top:-20px;
+}
+
+/*  */
+#side #area .shosai {
+	width: 180px;
+}
+
+
+#column strong { font-weight:bold; }
+#column h1,#column h2,#column h3,#column h4,#column h5,#column h6 {
+	/*font-size:medium;*/
+	font-weight:bold;
+}
+
+
+/*  投稿エディタｈタグ反映用　*/
+/*h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.17em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: 0.83em;
+}
+h6 {
+    font-size: 0.67em;
+}*/
